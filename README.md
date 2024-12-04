@@ -54,4 +54,18 @@ Deployment
 This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
 npm build fails to minify
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify 
+
+Technologies Used
+React: JavaScript library for building user interfaces.
+React Router: For handling routing and navigation within the application.
+Bootstrap: CSS framework for responsive design and components.
+CSS: For styling the components and ensuring a responsive layout.
+Node.js: For running the development server locally.
+Create React App: A tool to set up a new React application with a predefined configuration.
+For more detailed information on the tools, you can refer to the official documentation of each technology:
+
+React
+React Router
+Bootstrap
+Create React App

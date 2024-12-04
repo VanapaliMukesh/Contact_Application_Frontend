@@ -1,126 +1,57 @@
-Contacts Management UI (Frontend)
-Description
-This project is the frontend implementation of the Contacts Management Application. It allows users to interact with the backend API to manage their contacts, including adding, editing, deleting, and merging duplicate contacts. It also provides real-time feedback for form validation and allows users to manage contacts via a modern web interface.
+Getting Started with Create React App
+This project was bootstrapped with Create React App.
 
-Key Features
-CRUD Operations UI:
+Available Scripts
+In the project directory, you can run:
 
-Interface for creating, viewing, updating, and deleting contacts.
-Interactive forms for entering contact details (First Name, Last Name, Email, Address).
-Contact Merging Interface:
+npm  start
+Runs the app in the development mode.
+Open http://localhost:3000 to view it in your browser.
 
-UI components to help users identify and merge duplicate contacts.
-Displays suggestions for potential duplicate contacts based on email address.
-Validation Feedback:
+The page will reload when you make changes.
+You may also see any lint errors in the console.
 
-Provides real-time validation feedback on form fields:
-Required fields (First Name, Last Name).
-Valid email format.
-Error messages for invalid inputs.
-Responsive Design:
+npm  test
+Launches the test runner in the interactive watch mode.
+See the section about running tests for more information.
 
-The application is designed to be responsive, ensuring it works well on both mobile and desktop devices.
-Technologies Used
-Framework: React.js (Frontend Library)
-State Management: React's useState, useEffect (or Context API if necessary)
-CSS Framework: Bootstrap or custom CSS for layout and styling
-Validation Library: Formik or React Hook Form for form handling and validation
-API Communication: Axios or Fetch API for making requests to the backend
-Setup Instructions
-Prerequisites
-Node.js (>= 14.x)
-A working backend API for contacts management (see Backend Setup).
-Installation Steps
-Clone the repository:
+npm  build
+Builds the app for production to the build folder.
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-bash
-Copy code
-git clone https://github.com/VanapaliMukesh/Contact_Application_frontend.git
-cd Contact_Application_frontend
-Install dependencies:
+The build is minified and the filenames include the hashes.
+Your app is ready to be deployed!
 
-bash
-Copy code
-npm install
-Start the development server:
+See the section about deployment for more information.
 
-bash
-Copy code
-npm start
-The frontend will be running on http://localhost:3000.
+npm  eject
+Note: this is a one-way operation. Once you eject, you can't go back!
 
-Environment Variables
-If the application requires API endpoint configuration, add the following to your .env file:
+If you aren't satisfied with the build tool and configuration choices, you can eject at any time. This command will remove the single build dependency from your project.
 
-bash
-Copy code
-REACT_APP_API_URL=http://localhost:5000
-Folder Structure
-src/components: Contains reusable components (e.g., ContactForm, ContactList).
-src/pages: Contains the main pages of the application (e.g., HomePage, ContactPage).
-src/utils: Utility functions (e.g., for validation, API requests).
-How to Use
-Contact List Page
-View a list of all contacts with options to edit or delete them.
-Use the Merge Contacts feature to identify and merge duplicates based on email.
-Adding a Contact
-Navigate to the Add Contact page.
-Fill in the required fields (First Name, Last Name, Email, Address).
-Submit the form to create a new contact.
-Editing a Contact
-Select a contact from the list.
-Modify the fields as needed (First Name, Last Name, Email).
-Submit the form to save changes.
-Merging Contacts
-The Merge Contacts feature automatically detects duplicate contacts based on email.
-Select duplicate contacts to merge into one.
-API Documentation
-The frontend interacts with the following API endpoints for CRUD operations:
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except eject will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-GET /contacts: Fetch all contacts.
-POST /contacts: Create a new contact.
-PUT /contacts/:id: Update an existing contact.
-DELETE /contacts/:id: Delete a contact.
-POST /merge: Merge duplicate contacts based on email.
-Example API Usage
-Get All Contacts:
+You don't have to ever use eject. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-bash
-Copy code
-GET http://localhost:5000/contacts
-Response:
+Learn More
+You can learn more in the Create React App documentation.
 
-json
-Copy code
-[
-  {
-    "firstName": "John",
-    "lastName": "Doe",
-    "email": "john.doe@example.com",
-    "address": "123 Main St"
-  },
-  ...
-]
-Create a New Contact:
+To learn React, check out the React documentation.
 
-bash
-Copy code
-POST http://localhost:5000/contacts
-Body:
+Code Splitting
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-json
-Copy code
-{
-  "firstName": "Jane",
-  "lastName": "Doe",
-  "email": "jane.doe@example.com",
-  "address": "456 Elm St"
-}
-How to Contribute
-Fork the repository.
-Create a feature branch (git checkout -b feature/your-feature).
-Commit your changes (git commit -am 'Add new feature').
-Push to the branch (git push origin feature/your-feature).
-Create a new pull request.
-License
-This project is licensed under the MIT License.
+Analyzing the Bundle Size
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+Making a Progressive Web App
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+Advanced Configuration
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+Deployment
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+npm build fails to minify
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
